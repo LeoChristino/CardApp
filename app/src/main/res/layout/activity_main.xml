@@ -42,41 +42,45 @@
                 android:text="Agostino"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
-                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="1" />
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
 
-            <TextView
-                android:id="@+id/TxtRating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9.5"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="1" />
 
-            <ImageView
-                android:id="@+id/idshare"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_share" />
+                <TextView
+                    android:id="@+id/TxtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/idfav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_favorite" />
+                <ImageView
+                    android:id="@+id/idshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_share" />
 
-            <ImageView
-                android:id="@+id/idboo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_bookmark" />
+                <ImageView
+                    android:id="@+id/idfav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_favorite"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <ImageView
+                    android:id="@+id/idboo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_bookmark" />
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
